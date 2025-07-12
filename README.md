@@ -1,6 +1,6 @@
 # HR-Data-Analysis-Project
 
-## Overview
+## Project Overview
 
 This project presents a comprehensive analysis of employee attrition using SQL, Python, and Power BI. 
 The goal is to identify key drivers of attrition and build a predictive model to proactively flag at-risk employees.
