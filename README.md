@@ -74,12 +74,12 @@ An interactive Power BI dashboard was developed to support:
 
 ## Project Structure
 
-├── data/ # Raw and processed datasets
-├── notebooks/ # Jupyter notebooks for EDA and modeling
-├── scripts/ # Python scripts for cleaning and prediction
-├── powerbi/ # Power BI dashboard file (.pbix)
-├── outputs/ # Plots, reports, and metrics
-├── README.md # Project documentation
+- data/ # Raw and processed datasets
+- notebooks/ # Jupyter notebooks for EDA and modeling
+- scripts/ # Python scripts for cleaning and prediction
+- powerbi/ # Power BI dashboard file (.pbix)
+- outputs/ # Plots, reports, and metrics
+- README.md # Project documentation
 
 ## Key Learnings
 
