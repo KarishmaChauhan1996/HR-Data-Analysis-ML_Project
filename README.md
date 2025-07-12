@@ -37,7 +37,13 @@ The analysis is based on the following datasets (merged via `EmployeeNumber`):
 - Used Python-based EDA (heatmaps, bar plots, distribution charts) to assess patterns across job levels, roles, and performance metrics.
 - Detected class imbalance (84% No Attrition vs. 16% Yes), which significantly affected model performance in early experiments.
 
----
+## Power BI Dashboard
+
+An interactive Power BI dashboard was developed to support:
+- **Attrition Breakdown by Department, Gender, Job Role**
+- **Attrition Rate vs. Overtime, Salary, and Tenure**
+- **Slicer filters** for Education, Business Travel, Work-Life Balance, and other factors
+- **Dynamic KPI cards** to track overall attrition and high-risk categories
 
 ## Predictive Modeling
 
@@ -63,15 +69,6 @@ The analysis is based on the following datasets (merged via `EmployeeNumber`):
 
 The model improved the ability to identify actual attrition cases while maintaining reasonable overall accuracy.
 
-
-## Power BI Dashboard
-
-An interactive Power BI dashboard was developed to support:
-- **Attrition Breakdown by Department, Gender, Job Role**
-- **Attrition Rate vs. Overtime, Salary, and Tenure**
-- **Slicer filters** for Education, Business Travel, Work-Life Balance, and other factors
-- **Dynamic KPI cards** to track overall attrition and high-risk categories
-
 ## Project Structure
 
 - data/ # Raw and processed datasets
@@ -87,7 +84,6 @@ An interactive Power BI dashboard was developed to support:
 - Trade-offs between recall and precision in HR risk prediction
 - Integration of analytics tools (SQL, Python, Power BI) for full-cycle insight delivery
 
----
 
 ## Potential Enhancements
 
