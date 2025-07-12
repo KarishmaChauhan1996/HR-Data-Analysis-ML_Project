@@ -1,15 +1,29 @@
 # HR-Data-Analysis-Project
 
+## Overview
+
+This project presents a comprehensive analysis of employee attrition using SQL, Python, and Power BI. 
+The goal is to identify key drivers of attrition and build a predictive model to proactively flag at-risk employees.
+
+## Objectives
+
+Employee turnover is a critical challenge for organizations. This project aims to:
+- Perform exploratory and statistical analysis to uncover key factors associated with employee attrition.
+- Visualize trends and patterns using an interactive Power BI dashboard.
+- Develop a logistic regression model to predict the likelihood of attrition.
+- Address class imbalance using SMOTE to improve prediction quality.
+- Enable early detection of high-risk individuals.
+- Support strategic HR interventions through insights and predictive modeling.
 
 ### Data
 
 We have following tables with columns:
 
-### df_attrition 
+#### df_attrition 
 EmployeeNumber
 Attrition
 
-### df_employee_info 
+#### df_employee_info 
 EmployeeNumber	
 Age	
 Education	
@@ -18,7 +32,7 @@ Gender
 MaritalStatus	
 Over18
 
-### df_job_satisfaction 
+#### df_job_satisfaction 
 EmployeeNumber	
 EnvironmentSatisfaction	
 JobInvolvement	
@@ -26,7 +40,7 @@ JobSatisfaction
 Manager_RelationshipSatisfaction	
 WorkLifeBalance
 
-### df_job_details
+#### df_job_details
 
 EmployeeNumber	
 Department	
@@ -46,3 +60,52 @@ YearsAtCompany
 YearsInCurrentRole	
 YearsSinceLastPromotion 
 YearsWithCurrManager
+
+## Tools & Technologies
+
+- **SQL** – Data extraction, transformation, and aggregation
+- **Python** – Data preprocessing, EDA, correlation analysis, and predictive modeling
+- **Libraries:** Pandas, NumPy, scikit-learn, imblearn, statsmodels, matplotlib, seaborn
+- **Power BI** – Interactive dashboard creation for HR insights
+
+## ## 🔍 Data Analysis Highlights
+
+- Identified **OverTime**, **Job Satisfaction**, **Marital Status (Single)**, and **Environment Satisfaction** as the most positively correlated features with attrition.
+- Used Python-based EDA (heatmaps, bar plots, distribution charts) to assess patterns across job levels, roles, and performance metrics.
+- Detected class imbalance (84% No Attrition vs. 16% Yes), which significantly affected model performance in early experiments.
+
+---
+
+## 🤖 Predictive Modeling
+
+#### Model Used
+- **Logistic Regression** (interpretable and baseline model)
+- Addressed class imbalance using **SMOTE** (Synthetic Minority Oversampling Technique)
+
+#### Modeling Pipeline
+1. Categorical encoding & feature scaling
+2. Train-test split (stratified)
+3. SMOTE resampling on training data
+4. Logistic regression model training
+5. Model evaluation using multiple metrics
+
+#### Model Performance
+
+| Metric                  | Value (Test Set)        |
+|-------------------------|-------------------------|
+| Accuracy                | 83%                     |
+| F1-Score (Attrition)    | 0.34                    |
+| ROC-AUC Score           | 0.77                    |
+| Recall (Attrition Class)| ↑ from 19% to **45%**   |
+
+The model improved the ability to identify actual attrition cases while maintaining reasonable overall accuracy.
+
+
+## Power BI Dashboard
+
+An interactive Power BI dashboard was developed to support:
+- **Attrition Breakdown by Department, Gender, Job Role**
+- **Attrition Rate vs. Overtime, Salary, and Tenure**
+- **Slicer filters** for Education, Business Travel, Work-Life Balance, and other factors
+- **Dynamic KPI cards** to track overall attrition and high-risk categories
+
