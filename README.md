@@ -15,51 +15,14 @@ Employee turnover is a critical challenge for organizations. This project aims t
 - Enable early detection of high-risk individuals.
 - Support strategic HR interventions through insights and predictive modeling.
 
-## Data
+## Data Overview
 
-We have following tables with columns:
+The analysis is based on the following datasets (merged via `EmployeeNumber`):
 
-#### df_attrition 
-EmployeeNumber
-Attrition
-
-#### df_employee_info 
-EmployeeNumber	
-Age	
-Education	
-EducationField	
-Gender	
-MaritalStatus	
-Over18
-
-#### df_job_satisfaction 
-EmployeeNumber	
-EnvironmentSatisfaction	
-JobInvolvement	
-JobSatisfaction	
-Manager_RelationshipSatisfaction	
-WorkLifeBalance
-
-#### df_job_details
-
-EmployeeNumber	
-Department	
-BusinessTravel	
-DistanceFromHome	
-JobInvolvement	
-JobLevel	
-JobRole	
-MonthlySalary	
-NumCompaniesWorked	 
-OverTime 
-PercentSalaryHike_last_year	
-PerformanceRating	
-StockOptionLevel	
-TrainingTimesLastYear	
-YearsAtCompany	
-YearsInCurrentRole	
-YearsSinceLastPromotion 
-YearsWithCurrManager
+- **Attrition Data** (`df_attrition`): Attrition flag (Yes/No)
+- **Employee Demographics** (`df_employee_info`): Age, Gender, Marital Status, Education, etc.
+- **Job Details** (`df_job_details`): Department, Business Travel, Overtime, Salary, etc.
+- **Satisfaction Survey** (`df_job_satisfaction`): Job Satisfaction, Environment Satisfaction, Work-Life Balance, etc.
 
 ## Tools & Technologies
 
