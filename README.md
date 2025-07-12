@@ -15,7 +15,7 @@ Employee turnover is a critical challenge for organizations. This project aims t
 - Enable early detection of high-risk individuals.
 - Support strategic HR interventions through insights and predictive modeling.
 
-### Data
+## Data
 
 We have following tables with columns:
 
@@ -68,15 +68,15 @@ YearsWithCurrManager
 - **Libraries:** Pandas, NumPy, scikit-learn, imblearn, statsmodels, matplotlib, seaborn
 - **Power BI** – Interactive dashboard creation for HR insights
 
-## ## 🔍 Data Analysis Highlights
+## Data Analysis Highlights
 
-- Identified **OverTime**, **Job Satisfaction**, **Marital Status (Single)**, and **Environment Satisfaction** as the most positively correlated features with attrition.
+- Used SQL and Python for Data Analysis. Identified **OverTime**, **Job Satisfaction**, **Marital Status (Single)**, and **Environment Satisfaction** as the most positively correlated features with attrition.
 - Used Python-based EDA (heatmaps, bar plots, distribution charts) to assess patterns across job levels, roles, and performance metrics.
 - Detected class imbalance (84% No Attrition vs. 16% Yes), which significantly affected model performance in early experiments.
 
 ---
 
-## 🤖 Predictive Modeling
+## Predictive Modeling
 
 #### Model Used
 - **Logistic Regression** (interpretable and baseline model)
@@ -89,7 +89,7 @@ YearsWithCurrManager
 4. Logistic regression model training
 5. Model evaluation using multiple metrics
 
-#### Model Performance
+#### Results
 
 | Metric                  | Value (Test Set)        |
 |-------------------------|-------------------------|
@@ -109,3 +109,26 @@ An interactive Power BI dashboard was developed to support:
 - **Slicer filters** for Education, Business Travel, Work-Life Balance, and other factors
 - **Dynamic KPI cards** to track overall attrition and high-risk categories
 
+## Project Structure
+
+├── data/ # Raw and processed datasets
+├── notebooks/ # Jupyter notebooks for EDA and modeling
+├── scripts/ # Python scripts for cleaning and prediction
+├── powerbi/ # Power BI dashboard file (.pbix)
+├── outputs/ # Plots, reports, and metrics
+├── README.md # Project documentation
+
+## Key Learnings
+
+- Importance of addressing class imbalance in classification problems
+- Trade-offs between recall and precision in HR risk prediction
+- Integration of analytics tools (SQL, Python, Power BI) for full-cycle insight delivery
+
+---
+
+## Potential Enhancements
+
+- Incorporate advanced models like **Random Forest** or **XGBoost** with hyperparameter tuning
+- Build a web-based HR tool for real-time attrition risk scoring
+- Conduct **SHAP/feature attribution** for model interpretability
+- Deploy the model using Flask or Streamlit for internal HR access
